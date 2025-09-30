@@ -30,3 +30,23 @@ $ucapanSalam = "Selamat pagi";
 //memanggil lagi
 perkenalan($saya, $ucapanSalam);
 ?>
+<?php
+// membuat fungsi
+function perkenalan($nama, $salam = "Assalamualaikum") {
+    echo $salam.", ";
+    echo "Perkenalkan, nama saya $nama<br>";
+    echo "Senang berkenalan dengan Anda<br><br>";
+}
+
+// Memanggil fungsi yang dibuat
+perkenalan("Elok", "Selamat pagi");
+
+echo "<hr>";
+
+$saya = "Elok";
+$ucapSalam = "Selamat pagi";
+
+// Memanggil lagi tanpa mengisi parameter salam
+perkenalan("$saya");
+?>
+
